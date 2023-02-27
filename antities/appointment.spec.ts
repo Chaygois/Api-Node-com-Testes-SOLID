@@ -15,7 +15,7 @@ import { Appointment } from './appointment'
     expect(appointment).toBeInstanceOf(Appointment)
     expect(appointment.custoner).toEqual('John Doe')
     })
-    test ('canot  create an appointment with end date before start date'), ()=> {
+    test ('canot  create an appointment with start  date before now'), ()=> {
         const startsAt = new Date()
         const endsAt = new Date()
         endsAt.setDate(endsAt.getDate() -1)
